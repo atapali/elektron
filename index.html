@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Electron boilerplate</title>
+		<link rel="stylesheet" href="index.css" />
+		<script defer src="index.js"></script>
+		<script defer src="renderer.js"></script>
+	</head>
+	<body id="body">
+		<div class="container dark-mode">
+			<header>
+				<h1 id="ferhat">Ferhat gay!</h1>
+				<div class="rot2">
+					<img class="rot" src="./memet2.png" alt="memet" />
+				</div>
+				<div style="display: flex; justify-content: center">
+					<h2>Sayaç:</h2>
+					<h2 id="sayac">0</h2>
+				</div>
+				<button onclick="addToCounter()">Arttır</button>
+			</header>
+			<section class="main"></section>
+			<section id="preferences" class="container" hidden>
+				<ul>
+					<li>
+						<div id="dark-mode">
+							<p>DarkMode:</p>
+							<p id="dark-mode-value">false</p>
+							<button onclick="toggleDarkMode()">Toggle Mode</button>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<footer id="info"></footer>
+		</div>
+	</body>
+</html>

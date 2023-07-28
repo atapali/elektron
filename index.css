@@ -1,0 +1,83 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+@keyframes rotate {
+	0% {
+			transform: rotate(0deg);
+		}
+	25% {
+		transform: rotate(180deg);
+	}
+	50% {
+		transform: rotate(360deg);
+	}
+
+	75% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+@keyframes leaves {
+0% {
+	transform: scale(1, 1);
+}
+
+50% {
+	transform: scale(2, 2);
+}
+100% {
+	transform: scale(1, 1);
+}
+
+}
+
+/* Use OS default fonts */
+.rot {
+	animation: reverse rotate 5s linear infinite;
+	justify-content: center;
+}
+
+.rot2 {
+	animation: leaves 5s ease-in-out infinite alternate;
+}
+
+body {
+	font-family:
+		system-ui,
+		-apple-system,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+	text-rendering: optimizeLegibility;
+	
+	background: url(./memet.png) no-repeat 0 0 fixed;
+	
+}
+
+header {
+	position: absolute;
+	width: 500px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -250px;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 60px;
+	font-weight: 200;
+	margin: 0;
+	padding: 0;
+	opacity: 0.7;
+}
